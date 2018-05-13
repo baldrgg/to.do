@@ -1,9 +1,14 @@
 {
     "name": "to.do",
     "main": "./index.html",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Complete your tasks, manage your life and feel great.",
     "platforms": ["Android", "iOS", "Web"],
+    "icons": {
+        "Anroid": "./resources/images/logo.png",
+        "iOS": "",
+        "Web": ""
+    },
     "current_build": "Platforms.Android",
     "license": "Apache License 2.0",
     "author": {

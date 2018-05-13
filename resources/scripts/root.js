@@ -132,6 +132,8 @@ class Renderer {
             })
         }
 
+        if (task.value > MAX_TASK_LENGTH) return;
+
         let node = document.createElement('div');
         node.className = 'task';
         node.dataset.id = task.id;
@@ -144,7 +146,12 @@ class Renderer {
         content.className = 'content';
 
         let value = document.createElement('a');
-        value.innerHTML = task.value;
+
+        if (task.value.length <= MAX_TAB_LENGTH) {
+            value.innerHTML = task.value;
+        } else {
+            value.innerHTML = Tools.joinDoubleSide(Tools.divideString(task.value, MAX_TAB_LENGTH), '<a>', '</a><br>');
+        }
 
         let buttons = document.createElement('div');
         buttons.className = 'buttons';
@@ -160,7 +167,6 @@ class Renderer {
 
         let that = this;
 
-
         remove.addEventListener('touchstart', function(e) {
             let index = this.parentNode.parentNode.parentNode.dataset.id;
             that.controller.remove(that.controller.get(index));
@@ -173,6 +179,19 @@ class Renderer {
 
 
         node.appendChild(content);
+
+        /**
+            @example Very long text values in DOM will looks something like this:
+            '       SOME_TEXT_STRING'
+            '   DOUBLE_TEXT_STRING'
+            '   ....'
+            WHERE '   ' is normal indent, and '      ' isnt.
+            Next code will remove double TAB from text to get smth like this:
+            '   SOME_TEXT_STRING'
+            '   DOUBLE_TEXT_STRING'
+            '   ....'
+        */
+        content.childNodes[0].childNodes[0].style = 'margin-left: 0px;';
 
         if (task.status) {
             this.completed.appendChild(node);
