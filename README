@@ -8,10 +8,10 @@ CURRENT VERSION: 0.1.8a.
 
 RELEASED:
     - Loader screen.
-    
+    - Application icon
 
 TODO:
-    - Application icon.                                                                                     (-)
+    - Fix bugs width remove icon click.
     - Animations: tasks must go down after completing and go up after recovery to uncompleted variant.      (-)
     - Advanced sort method: make new sort of completed tasks. (last completed task must be on top).         (-)
     - Settings screen.                                                                                      (-)

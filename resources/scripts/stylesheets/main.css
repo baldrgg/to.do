@@ -79,7 +79,7 @@
         width: 90%;
         height: 60px;
         float: left;
-        text-indent: -240px;
+        text-indent: -210px;
         line-height: 22px;
         background: #fff;
         border-radius: 5px;
@@ -110,9 +110,9 @@
         top: 33%;
         right: 15%;
     }
-    .remove:hover {
+    /* .remove:hover {
         content: url('../../images/icons/remove-item-hover.png');
-    }
+    } */
     /*
     */
     .task:not(#completed) .complete {

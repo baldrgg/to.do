@@ -2,7 +2,9 @@
     "name": "to.do",
     "main": "./index.html",
     "version": "0.2.1",
+    "description": "Complete your tasks, manage your life and feel great.",
     "platforms": ["Android", "iOS", "Web"],
+    "current_build": "Platforms.Android",
     "license": "Apache License 2.0",
     "author": {
         "name": "Anthony Vorobyov",
