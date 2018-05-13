@@ -160,12 +160,13 @@ class Renderer {
 
         let that = this;
 
-        remove.addEventListener('click', function(e) {
+
+        remove.addEventListener('touchstart', function(e) {
             let index = this.parentNode.parentNode.parentNode.dataset.id;
             that.controller.remove(that.controller.get(index));
         })
 
-        complete.addEventListener('click', function(e) {
+        complete.addEventListener('touchstart', function(e) {
             let index = this.parentNode.parentNode.parentNode.dataset.id;
             that.controller.changeState(that.controller.get(index));
         })
