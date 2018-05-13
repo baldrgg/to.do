@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+    body {
+        background-color: #edf0f1;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    a {
+        font-family: 'Roboto', sans-serif;
+    }
+    #application-logo {
+        content: url('../../images/logo.png');
+        width: 130px;
+        height: 120px;
+        position: absolute;
+        top: 20%;
+        left: 33.5%
+    }
+    #application-name {
+        position: absolute;
+        top: 40%;
+        left: 38%;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    #application-description {
+        width: 200px;
+        position: absolute;
+        top: 47%;
+        left: 22%;
+        color: #444;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    #empty-progress-bar {
+        position: absolute;
+        background-color: #8c8c8c;
+        border-radius: 9px;
+        width: 80%;
+        height: 10px;
+        left: 10%;
+        top: 60%;
+        opacity: 0.3;
+    }
+    #loaded-progress-bar {
+        position: absolute;
+        background-color: #7ac143;
+        border-radius: 9px;
+        width: 0%;
+        height: 10px;
+        left: 10%;
+        top: 60%;
+    }

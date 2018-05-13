@@ -3,9 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.baldr.todo"
     versionCode = "2"
-    version     = "0.1.7b" >
-
-<!-- versionCode is optional and Android only -->
+    version     = "0.2.1" >
 
   <name>to.do</name>
 
@@ -16,5 +14,7 @@
   <author href="https://build.phonegap.com" email="baldrgg@gmail.com">
       Anthony Vorobyov
   </author>
+
+  <icon src="./resources/images/logo.png" platform="android" qualifier="xxhdpi" />
 
 </widget>

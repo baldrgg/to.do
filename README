@@ -1,0 +1,18 @@
+LAST WORKABLE VERSION: 0.1.7b.
+
+RELEASED:
+    - Basic features: you can add, remove and change status of task.
+    - Basic sorting: newer tasks are going to top after creating.
+
+CURRENT VERSION: 0.1.8a.
+
+RELEASED:
+    - Loader screen.
+    
+
+TODO:
+    - Application icon.                                                                                     (-)
+    - Animations: tasks must go down after completing and go up after recovery to uncompleted variant.      (-)
+    - Advanced sort method: make new sort of completed tasks. (last completed task must be on top).         (-)
+    - Settings screen.                                                                                      (-)
+    - Changeable UI.                                                                                        (-)

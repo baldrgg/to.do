@@ -18,7 +18,7 @@
         background: #25b99a;
         box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
         border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 15px;
+        border-bottom-left-radius: 10px;
     }
     header input {
         margin-left: 15px;
@@ -61,7 +61,7 @@
     /*
     */
     header img {
-        content: url("../../images/add-item.png");
+        content: url("../../images/icons/add-item.png");
         position: absolute;
         right: 4%;
         top: 10%;
@@ -79,7 +79,7 @@
         width: 90%;
         height: 60px;
         float: left;
-        text-indent: 25px;
+        text-indent: -240px;
         line-height: 22px;
         background: #fff;
         border-radius: 5px;
@@ -103,7 +103,7 @@
     /*
     */
     .remove {
-        content: url('../../images/remove-item.png');
+        content: url('../../images/icons/remove-item.png');
         width: 15px;
         height: 20px;
         position: absolute;
@@ -111,12 +111,12 @@
         right: 15%;
     }
     .remove:hover {
-        content: url('../../images/remove-item-hover.png');
+        content: url('../../images/icons/remove-item-hover.png');
     }
     /*
     */
     .task:not(#completed) .complete {
-        content: url('../../images/complete-icon.png');
+        content: url('../../images/icons/complete-icon.png');
         width: 31px;
         height: 31px;
         position: absolute;
@@ -124,7 +124,7 @@
         right: 4%;
     }
     .task#completed .complete {
-        content: url('../../images/completed-icon.png');
+        content: url('../../images/icons/completed-icon.png');
         width: 21px;
         height: 21px;
         position: absolute;

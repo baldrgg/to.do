@@ -1,7 +1,7 @@
 {
     "name": "to.do",
     "main": "./index.html",
-    "version": "0.1.7b",
+    "version": "0.2.1",
     "platforms": ["Android", "iOS", "Web"],
     "license": "Apache License 2.0",
     "author": {

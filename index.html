@@ -2,20 +2,41 @@
     <html>
         <head>
             <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="./resources/scripts/stylesheets/reset.css">
             <link rel="stylesheet" type="text/css" href="./resources/scripts/stylesheets/fonts/roboto.css">
             <link rel="stylesheet" type="text/css" href="./resources/scripts/stylesheets/main.css">
+            <link rel="stylesheet" type="text/css" href="./resources/scripts/stylesheets/loader.css">
             <script defer type="text/javascript" src="./resources/scripts/config.js"></script>
             <script defer type="text/javascript" src="./resources/scripts/root.js"></script>
-            <script defer type="text/javascript" src="./resources/scripts/index.js"></script>
+            <script defer type="text/javascript" src="./resources/scripts/loader.js"></script>
         </head>
         <body>
-            <header>
-                <input type="text" id="item" placeholder="Enter an activity...">
-                <img id="add">
-            </header>
-            <div id="container">
-                <div id="completed"></div>
+            <div id="loader">
+                <div id="loader-layer">
+                    <div id="loader-context">
+                        <img id="application-logo" data-layer="1">
+                        <div id="application-context-info">
+                            <a id="application-name" data-layer="1">to.do</a>
+                            <a id="application-description" data-layer="0">
+                                Complete your tasks, manage your life and feel great.
+                            </a>
+                        </div>
+                        <div id="loader-progress-bar" data-layer="2">
+                            <div id="empty-progress-bar" data-layer="2-0"></div>
+                            <div id="loaded-progress-bar" data-layer="2-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display:none" id="manager">
+                <header>
+                    <input type="text" id="item" placeholder="Enter an activity...">
+                    <img id="add">
+                </header>
+                <div id="container">
+                    <div id="completed"></div>
+                </div>
             </div>
         </body>
     </html>
