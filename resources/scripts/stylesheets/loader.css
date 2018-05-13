@@ -2,8 +2,10 @@
 
     body {
         background-color: #edf0f1;
-        text-align: center;
         word-wrap: break-word;
+    }
+    #loader {
+        text-align: center;
     }
     a {
         font-family: 'Roboto', sans-serif;
